@@ -1,0 +1,69 @@
+*
+  text-rendering: optimizeLegibility
+  font-smoothing: antialiased
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+*, :after, :before
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -o-box-sizing: border-box
+  box-sizing: border-box
+  outline: none !important 
+
+html
+  height: 100%
+
+
+body
+  font-family: $main-font
+  min-height: 100%
+  background-color: #ededed
+  overflow-x: hidden
+  line-height: 1
+  margin: 0
+  padding: 0
+
+h1,h2,h3,h4,h5,h6
+  font-weight: normal
+  margin: 0
+  padding: 0
+  line-height: 1
+
+input,
+textarea,
+a,
+a:hover,
+a:focus,
+a:active,
+button,
+button:hover,
+button:focus,
+button:active
+  outline: none !important
+  -webkit-box-shadow: none !important
+  -moz-box-shadow: none !important
+  box-shadow: none !important
+  text-decoration: none
+
+
+textarea
+  resize: none
+
+ul
+  list-style: none
+  padding: 0px
+  margin: 0px
+
+a
+  color: inherit
+  transition: .3s
+
+.cleared
+  &:after
+    height: 0
+    display: block
+    content: ""
+    clear: both
+  
+

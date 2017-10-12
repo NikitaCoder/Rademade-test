@@ -1,0 +1,32 @@
+extends ../layouts/base
+
+block page
+    main.main
+        include ../includes/header
+        section.customer
+            .customer-left
+                img.customer_img(src="")
+            .customer-right
+                .customer-top
+                    span.customer_name Max Jones
+                    span.customer_status Gold
+                    .customer_position Sales & Marketing
+                .customer-bottom
+                    .customer-info
+                        span phone
+                        a(href="#").customer-info_elem (+31) 140 175 468
+                    .customer-info
+                        span address
+                        .customer-info_elem Binnenweg 50, Rotterdam
+                    a.btn-grey(href="#") create quote
+        section.tabs
+            ul.tabs-menu
+                li.tabs-menu_li
+                    a(href="#") overview
+                li.tabs-menu_li
+                    a(href="#") orders
+                li.tabs-menu_li
+                    a(href="#") payments            
+
+
+        

@@ -1,0 +1,68 @@
+.header
+    +flex-display(flex)
+    +justify-content(space-between)
+    +align-items(center)
+    padding: 15px 35px
+    background-color: #fff
+    border-bottom: 2px solid rgba(238,238,238,0.4)
+    &-right
+        +flex-display(flex)
+        +align-items(center)
+
+.breadcrums
+    &_back
+        color: #4f4f4f
+        font-size: 16px
+    &_chevron 
+        color: #4f4f4f
+        font-size: 15px
+        margin: 0 20px
+    &_current
+        color: #442a9d
+
+.search
+    position: relative
+    color: #999
+    &_input
+        font-size: 12px
+        font-family: $regular-font
+        padding: 10px 40px 10px 20px
+        border: 1px solid #ededed
+        border-radius: 5px
+        width: 280px
+    &_input::-webkit-search-decoration,
+    &_input::-webkit-search-cancel-button,
+    &_input::-webkit-search-results-button,
+    &_input::-webkit-search-results-decoration
+        display: none
+
+    &_loupe
+        font-size: 17px
+        position: absolute
+        right: 20px
+        top: 50%
+        transform: translate(0, -50%)
+        cursor: pointer
+
+.bell
+    position: relative
+    margin: 0 40px
+    &_elem
+        font-size: 20px
+        color: #dedede
+    &_number
+        +flex-display(flex)
+        +justify-content(center)
+        +align-items(center)
+        background-color: #f14e95
+        color: #f4f4f4
+        font-size: 12px
+        position: absolute       
+        border-radius: 50%
+        width: 18px
+        height: 18px
+        top: -6px
+        right: -11px
+
+
+    

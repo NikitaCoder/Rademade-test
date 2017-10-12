@@ -1,0 +1,51 @@
+.wrapper
+    +flex-display(flex)
+    max-width: 1415px
+    margin: 0 auto
+    
+.aside
+    +flex-grow(0)
+    +flex-basis(23%)
+    +flex-shrink(1)
+    background-color: #303841
+    min-height: 100vh
+    
+    &_title
+        font-family: $regular-font
+        display: block
+        font-size: 28px
+        color: #ffc12d
+        margin: 50px 0 50px 25px
+        text-transform: uppercase
+        width: max-content
+    &-menu
+        &_li
+            padding: 0 20px 0 25px
+            &.active
+                background-color: #442a9d
+                border-left: 5px solid #ffc12d
+                & + li
+                    a
+                        border-top: none
+                a
+                    border: none
+                    padding: 25px 0
+            &:first-child
+                a
+                    border: none
+            &:last-child
+                a
+                    border-bottom: 2px solid rgba(186,189,192,0.07)
+            a
+                font-family: $light-font
+                color: #fff
+                font-size: 17.5px
+                display: block
+                padding: 20px 0
+                border-top: 2px solid rgba(186,189,192,0.07)
+                i
+                    color: #fff
+                    font-size: 22px
+                    margin: 0 20px 0 7px
+
+                
