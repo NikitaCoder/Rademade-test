@@ -2,3 +2,110 @@
     +flex-grow(1)
     +flex-shrink(1)
     +flex-basis(0)
+    height: 100%
+    background: #fff
+
+.customer
+    padding: 60px 0 90px
+    +flex-display(flex)
+    &-left
+        padding: 0 40px 0 35px
+        @media (max-width: 1240px)
+            padding: 0 25px
+    &-right
+        width: 100%
+    &_img
+        border: 4px solid #fff
+        border-raidus: 50%
+    &_name
+        color: #4f4f4f
+        font-size: 20px
+        margin-right: 20px
+        text-transform: uppercase
+        vertical-align: middle
+    &_status
+        color: #fff
+        font-size: 11px
+        background-color: #ffc12d
+        text-transform: uppercase  
+        padding: 2px 7px
+        border-radius: 3px
+        vertical-align: middle
+    &_position
+        color: #999
+        font-size: 15px
+        margin-top: 15px
+    &-top
+        border-bottom: 2px solid #ededed
+        padding-bottom: 15px
+    &-bottom
+        padding: 30px 35px 0 0
+        +flex-display(flex)
+        +justify-content(space-between)
+        .btn
+            +flex-display(flex)
+            +align-items(center)
+            margin-left: auto
+            background-color: #303841
+            font-size: 14px
+            color: #ffc12d 
+            border-radius: 3px
+            padding: 0 30px
+            text-transform: uppercase
+            &:hover
+                transition: .3s
+                background-color: #ffc12d
+                color: #303841
+    &-info
+        &:first-child
+            margin-right: 15%
+            @media (max-width: 1240px)
+                margin-right: 10%
+        span
+            color: #999
+            font-size: 12px
+            text-transform: uppercase
+        &_elem
+            color: #442a9d
+            font-size: 15px
+            display: block
+            margin-top: 10px
+
+.tabs
+    padding: 0 35px
+    @media (max-width: 1240px)
+        padding: 0 25px
+    &-menu
+        +flex-display(flex)
+        &_li
+            &:last-child
+                a
+                    margin: 0
+            a
+                display: block
+                padding: 0 15px 30px
+                margin-right: 30px
+                font-size: 14px
+                color: #303841
+                text-transform: uppercase
+                position: relative
+                &:hover
+                    text-shadow: 2px -2px 1px rgba(0,0,0,0.31)
+                    transition: .3s
+            &.active
+                a
+                    &:hover
+                        text-shadow: none
+                    &:before
+                        content: ''
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        width: 100%
+                        height: 6px
+                        background-color: #442a9d
+                        border-radius: 3px
+                        
+
+                    
+                

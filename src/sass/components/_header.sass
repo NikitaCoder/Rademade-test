@@ -2,12 +2,14 @@
     +flex-display(flex)
     +justify-content(space-between)
     +align-items(center)
-    padding: 15px 35px
+    padding: 10px 35px
     background-color: #fff
     border-bottom: 2px solid rgba(238,238,238,0.4)
     &-right
         +flex-display(flex)
         +align-items(center)
+    @media (max-width: 1240px)
+        padding: 10px 25px
 
 .breadcrums
     &_back
@@ -30,11 +32,11 @@
         border: 1px solid #ededed
         border-radius: 5px
         width: 280px
-    &_input::-webkit-search-decoration,
-    &_input::-webkit-search-cancel-button,
-    &_input::-webkit-search-results-button,
-    &_input::-webkit-search-results-decoration
-        display: none
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration
+            display: none
 
     &_loupe
         font-size: 17px
@@ -47,6 +49,10 @@
 .bell
     position: relative
     margin: 0 40px
+    cursor: pointer
+    &:hover
+        animation-name: bell
+        animation-duration: .3s
     &_elem
         font-size: 20px
         color: #dedede
@@ -63,6 +69,20 @@
         height: 18px
         top: -6px
         right: -11px
+    @media (max-width: 1240px)
+        margin: 0 20px    
+
+.user
+    cursor: pointer
+    +flex-display(flex)
+    +align-items(center)
+    &_image
+        border-radius: 50%
+        border: 4px solid #fff
+        margin-right: 10px
+    &_greeting
+        font-size: 16px
+        color: #4f4f4f
 
 
     
