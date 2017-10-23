@@ -1,2 +1,12 @@
 mixin text(textVal)
   p= textVal
+
+mixin menu(icon, text, active)
+  li.aside-menu__li(class=active)
+    a(href="#")
+        i.fa(class=icon, aria-hidden="true")
+        = text
+
+mixin tabs(text, active)
+  li.tabs-menu__li(class=active)
+    a(href="#")= text

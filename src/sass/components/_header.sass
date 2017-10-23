@@ -1,31 +1,32 @@
 .header
-    +flex-display(flex)
-    +justify-content(space-between)
-    +align-items(center)
+    display: flex
+    justify-content: space-between
+    align-items: center
     padding: 10px 35px
     background-color: #fff
     border-bottom: 2px solid rgba(238,238,238,0.4)
     &-right
-        +flex-display(flex)
-        +align-items(center)
+        display: flex
+        align-items: center
     @media (max-width: 1240px)
         padding: 10px 25px
 
 .breadcrums
-    &_back
+    margin-right: auto
+    &__back
         color: #4f4f4f
         font-size: 16px
-    &_chevron 
+    &__chevron 
         color: #4f4f4f
         font-size: 15px
         margin: 0 20px
-    &_current
+    &__current
         color: #442a9d
 
 .search
     position: relative
     color: #999
-    &_input
+    &__input
         font-size: 12px
         font-family: $regular-font
         padding: 10px 40px 10px 20px
@@ -38,7 +39,7 @@
         &::-webkit-search-results-decoration
             display: none
 
-    &_loupe
+    &__loupe
         font-size: 17px
         position: absolute
         right: 20px
@@ -53,13 +54,13 @@
     &:hover
         animation-name: bell
         animation-duration: .3s
-    &_elem
+    &__elem
         font-size: 20px
         color: #dedede
-    &_number
-        +flex-display(flex)
-        +justify-content(center)
-        +align-items(center)
+    &__number
+        display: flex
+        justify-content: center
+        align-items: center
         background-color: #f14e95
         color: #f4f4f4
         font-size: 12px
@@ -74,13 +75,13 @@
 
 .user
     cursor: pointer
-    +flex-display(flex)
-    +align-items(center)
-    &_image
+    display: flex
+    align-items: center
+    &__image
         border-radius: 50%
         border: 4px solid #fff
         margin-right: 10px
-    &_greeting
+    &__greeting
         font-size: 16px
         color: #4f4f4f
 

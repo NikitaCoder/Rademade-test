@@ -1,29 +1,29 @@
 .main
-    +flex-grow(1)
-    +flex-shrink(1)
-    +flex-basis(0)
+    flex-grow: 1
+    flex-shrink: 1
+    flex-basis: 0
     height: 100%
     background: #fff
 
 .customer
     padding: 60px 0 90px
-    +flex-display(flex)
+    display: flex
     &-left
         padding: 0 40px 0 35px
         @media (max-width: 1240px)
             padding: 0 25px
     &-right
         width: 100%
-    &_img
+    &__img
         border: 4px solid #fff
         border-raidus: 50%
-    &_name
+    &__name
         color: #4f4f4f
         font-size: 20px
         margin-right: 20px
         text-transform: uppercase
         vertical-align: middle
-    &_status
+    &__status
         color: #fff
         font-size: 11px
         background-color: #ffc12d
@@ -31,7 +31,7 @@
         padding: 2px 7px
         border-radius: 3px
         vertical-align: middle
-    &_position
+    &__position
         color: #999
         font-size: 15px
         margin-top: 15px
@@ -40,11 +40,11 @@
         padding-bottom: 15px
     &-bottom
         padding: 30px 35px 0 0
-        +flex-display(flex)
-        +justify-content(space-between)
+        display: flex
+        justify-content: space-between
         .btn
-            +flex-display(flex)
-            +align-items(center)
+            display: flex
+            align-items: center
             margin-left: auto
             background-color: #303841
             font-size: 14px
@@ -65,7 +65,7 @@
             color: #999
             font-size: 12px
             text-transform: uppercase
-        &_elem
+        &__elem
             color: #442a9d
             font-size: 15px
             display: block
@@ -76,8 +76,8 @@
     @media (max-width: 1240px)
         padding: 0 25px
     &-menu
-        +flex-display(flex)
-        &_li
+        display: flex
+        &__li
             &:last-child
                 a
                     margin: 0

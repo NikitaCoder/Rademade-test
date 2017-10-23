@@ -5,28 +5,25 @@ block page
         include ../includes/header
         section.customer
             .customer-left
-                img.customer_img(src="img/customer.png")
+                img.customer__img(src="img/customer.png")
             .customer-right
                 .customer-top
-                    span.customer_name Max Jones
-                    span.customer_status Gold
-                    .customer_position Sales & Marketing
+                    span.customer__name Max Jones
+                    span.customer__status Gold
+                    .customer__position Sales & Marketing
                 .customer-bottom
                     .customer-info
                         span phone
-                        a(href="#").customer-info_elem (+31) 140 175 468
+                        a(href="#").customer-info__elem (+31) 140 175 468
                     .customer-info
                         span address
-                        .customer-info_elem Binnenweg 50, Rotterdam
+                        .customer-info__elem Binnenweg 50, Rotterdam
                     a.btn.btn-grey(href="#") create quote
         section.tabs
             ul.tabs-menu
-                li.tabs-menu_li.active
-                    a(href="#") overview
-                li.tabs-menu_li
-                    a(href="#") orders
-                li.tabs-menu_li
-                    a(href="#") payments
+                +tabs('overview', 'active')
+                +tabs('orders')
+                +tabs('payments')
 
 
         
